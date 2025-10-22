@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Register: Add "Paste with Structure" to folder background context menu.
+; Icon set to powershell.exe for visual cue.
+
+; Paste subtree - when right-clicking in folder background (open area)
+[HKEY_CLASSES_ROOT\Directory\Background\shell\StructuredPaste]
+@="Paste with Structure"
+"Icon"="powershell.exe"
+
+; --- Add "Paste with Structure" to folder background ---
+[HKEY_CLASSES_ROOT\Directory\Background\shell\StructuredPaste\command]
+@="wscript \"C:\\Windows\\structured_paste.vbs\" \"%V\\.\""

@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Unregister: Remove the context menu entry.
+
+; --- Remove "Paste with Structure" from folder background ---
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\StructuredPaste]
